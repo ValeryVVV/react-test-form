@@ -1,11 +1,34 @@
-# React homework template
+# React react-test template
 
 This project was created with
 [Create React App](https://github.com/facebook/create-react-app). To get
 acquainted and configure additional features
 [refer to documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Preparing for coding
+To start the project:
+1. Install the dependency package: npm install
+2. Project launch: npm start
+
+## About Project 
+
+This project was created from a layout (https://www.figma.com/file/p0oIJwZVrDwz6jcljSZWBb/React-test?type=design&node-id=15-424&mode=design&t=XwcJVEs1IzlfDJFo-0)
+
+Task:
+- You must set up the page shown here with the following conditions;
+- City field - which values are obtained by calling the API;
+- Attached API guide - GET_CITES;
+- The user can choose from the list or type the first letters and the control will show him the appropriate options;
+- An email field will only contain a valid email address;
+- A phone field will only contain numbers in Israeli format;
+- A 10-digit number starting with the digit 0;
+
+Clarifications: 
+- All fields are mandatory - if the user sends an empty field, we will show him the note: "This is a mandatory field";
+- If one of the fields does not meet the requirement, the following message must be displayed: "The format is incorrect";
+- The above form must be sent to the end point in the attached API guide  POST_FORM;
+- After receiving the answer for the transmission of the form, the message displayed on the thank you page must be displayed;
+
+### Preparing for coding
 
 1. Make sure you have an LTS version of Node.js installed on your computer.
    [Download and install](https://nodejs.org/en/) if needed.
@@ -14,40 +37,7 @@ acquainted and configure additional features
 4. Go to [http://localhost:3000](http://localhost:3000) in your browser. This
    page will automatically reload after saving changes to the project files.
 
-## Deploy
-
-The production version of the project will automatically be linted, built, and
-deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` branch
-is updated. For example, after a direct push or an accepted pull request. To do
-this, you need to edit the `homepage` field in the `package.json` file,
-replacing `your_username` and `your_repo_name` with your own, and submit the
-changes to GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
-
-Next, you need to go to the settings of the GitHub repository (`Settings` >
-`Pages`) and set the distribution of the production version of files from the
-`/root` folder of the `gh-pages` branch, if this was not done automatically.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Deployment status
-
-The deployment status of the latest commit is displayed with an icon next to its
-ID.
-
-- **Yellow color** - the project is being built and deployed.
-- **Green color** - deployment completed successfully.
-- **Red color** - an error occurred during linting, build or deployment.
-
-More detailed information about the status can be viewed by clicking on the
-icon, and in the drop-down window, follow the link `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Routing
+#### Routing
 
 If your application uses the `react-router-dom` library for routing, you must
 additionally configure the `<BrowserRouter>` component by passing the exact name
@@ -59,3 +49,4 @@ the line are required.
   <App />
 </BrowserRouter>
 ```
+
