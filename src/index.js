@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/react-test">
-        <App />
+    <BrowserRouter basename="/react-test-form">
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );
